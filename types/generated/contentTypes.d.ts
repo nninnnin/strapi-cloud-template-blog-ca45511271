@@ -561,6 +561,18 @@ export interface ApiTagTag extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    color: Schema.Attribute.Enumeration<
+      [
+        'Purple',
+        'Violet',
+        'Tomato',
+        'Salmon',
+        'DustyPink',
+        'Yellowgreen',
+        'Yellow',
+        'Skyblue',
+      ]
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
