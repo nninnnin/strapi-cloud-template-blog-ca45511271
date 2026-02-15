@@ -26,6 +26,9 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "mappedBy": "projects"
+    },
+    "year": {
+      "type": "integer"
     }
   }
 }
