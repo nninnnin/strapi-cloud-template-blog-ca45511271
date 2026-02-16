@@ -28,7 +28,11 @@
       "mappedBy": "projects"
     },
     "year": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
